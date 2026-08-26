@@ -1,15 +1,18 @@
 import vinext from "vinext";
 import { defineConfig } from "vite";
-import { nitro } from "nitro/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { sites } from "./build/sites-vite-plugin";
 
-const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
+const isCodexSeatbeltSandbox =
+  process.env.CODEX_SANDBOX === "seatbelt";
 
 export default defineConfig({
   server: {
     host: "0.0.0.0",
-    allowedHosts: ["terminal.local"],
+
+    allowedHosts: [
+      "terminal.local",
+    ],
 
     ...(isCodexSeatbeltSandbox
       ? {
@@ -21,10 +24,9 @@ export default defineConfig({
       : {}),
   },
 
- plugins: [
-  tailwindcss(),
-  vinext(),
-  sites(),
-  nitro(),
-],
+  plugins: [
+    tailwindcss(),
+    vinext(),
+    sites(),
+  ],
 });

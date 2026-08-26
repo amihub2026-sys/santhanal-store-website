@@ -1885,3 +1885,66 @@
     object-position: center;
   }
 }
+.language-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: inherit;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s ease;
+}
+
+.language-toggle:hover {
+  transform: translateY(-2px);
+}
+/* Tamil hero heading - smaller than English */
+.story-panel h1.tamil-title {
+  font-size: clamp(2.8rem, 3.5vw, 5.4rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+/* Tamil hero mobile */
+@media (max-width: 768px) {
+  .story-panel h1.tamil-title {
+    font-size: clamp(2rem, 8vw, 3.3rem);
+    line-height: 1.22;
+  }
+}
+/* Shop section Tamil title */
+.section-title h2.shop-tamil-title {
+  font-size: clamp(2rem, 3.5vw, 3.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.section-title h2.shop-tamil-title em {
+  font-size: 0.95em;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-title h2.shop-tamil-title {
+    font-size: clamp(1.8rem, 7vw, 2.7rem);
+    line-height: 1.25;
+  }
+}
+/* Tradition Tamil heading */
+.tradition-copy.tradition-tamil h2 {
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.tradition-copy.tradition-tamil h2 em {
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+  .tradition-copy.tradition-tamil h2 {
+    font-size: clamp(1.9rem, 7vw, 2.8rem);
+    line-height: 1.25;
+  }
+}
