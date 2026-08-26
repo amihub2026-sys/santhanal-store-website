@@ -163,78 +163,153 @@ const reasons = [
   ["04", "Personal guidance", "Friendly help to choose the right product for every need."],
 ];
 
-const poojaProducts = [
-  {
-    number: "01",
-    tamil: "சந்தனம்",
-    name: "Pure Sandal Paste",
-    description: "Pure fragrant sandal paste for pooja and sacred abhishekam.",
-    image: "/products/sandal-paste.png",
-  },
-  {
-    number: "02",
-    tamil: "குங்குமம்",
-    name: "Traditional Kumkum",
-    description: "Auspicious kumkum prepared for temple and home worship.",
-    image: "/products/kumkum.png",
-  },
-  {
-    number: "03",
-    tamil: "விபூதி",
-    name: "Sacred Vibhuti",
-    description: "Traditional sacred ash for daily prayers and blessings.",
-    image: "/products/vibhuti.png",
-  },
-  {
-    number: "04",
-    tamil: "மஞ்சள்",
-    name: "Turmeric Powder",
-    description: "Natural turmeric representing purity, protection and prosperity.",
-    image: "/products/turmeric.png",
-  },
-  {
-    number: "05",
-    tamil: "கற்பூரம்",
-    name: "Pooja Camphor",
-    description: "Clean-burning camphor for traditional deeparadhana.",
-    image: "/products/camphor.png",
-  },
-  {
-    number: "06",
-    tamil: "ஊதுபத்தி",
-    name: "Incense Sticks",
-    description: "Long-lasting devotional fragrance for your prayer space.",
-    image: "/products/incense-sticks.png",
-  },
-  {
-    number: "07",
-    tamil: "சாம்பிராணி",
-    name: "Traditional Sambrani",
-    description: "Sacred sambrani with a calming traditional fragrance.",
-    image: "/products/sambrani.png",
-  },
-  {
-    number: "08",
-    tamil: "தீப எண்ணெய்",
-    name: "Pooja Lamp Oil",
-    description: "Special oil prepared for lighting traditional pooja lamps.",
-    image: "/products/pooja-oil.png",
-  },
-  {
-    number: "09",
-    tamil: "பஞ்சுத் திரி",
-    name: "Cotton Wicks",
-    description: "Pure cotton wicks made for lamps and traditional diyas.",
-    image: "/products/cotton-wicks.png",
-  },
-  {
-    number: "10",
-    tamil: "பூஜை பாத்திரங்கள்",
-    name: "Pooja Essentials",
-    description: "Traditional brass items for temples and home prayer rooms.",
-    image: "/products/pooja-essentials.png",
-  },
-];
+const poojaProducts = {
+  en: [
+    {
+      number: "01",
+      tamil: "சந்தனம்",
+      name: "Pure Sandal Paste",
+      description: "Pure fragrant sandal paste for pooja and sacred abhishekam.",
+      image: "/products/sandal-paste.png",
+    },
+    {
+      number: "02",
+      tamil: "குங்குமம்",
+      name: "Traditional Kumkum",
+      description: "Auspicious kumkum prepared for temple and home worship.",
+      image: "/products/kumkum.png",
+    },
+    {
+      number: "03",
+      tamil: "விபூதி",
+      name: "Sacred Vibhuti",
+      description: "Traditional sacred ash for daily prayers and blessings.",
+      image: "/products/vibhuti.png",
+    },
+    {
+      number: "04",
+      tamil: "மஞ்சள்",
+      name: "Turmeric Powder",
+      description: "Natural turmeric representing purity, protection and prosperity.",
+      image: "/products/turmeric.png",
+    },
+    {
+      number: "05",
+      tamil: "கற்பூரம்",
+      name: "Pooja Camphor",
+      description: "Clean-burning camphor for traditional deeparadhana.",
+      image: "/products/camphor.png",
+    },
+    {
+      number: "06",
+      tamil: "ஊதுபத்தி",
+      name: "Incense Sticks",
+      description: "Long-lasting devotional fragrance for your prayer space.",
+      image: "/products/incense-sticks.png",
+    },
+    {
+      number: "07",
+      tamil: "சாம்பிராணி",
+      name: "Traditional Sambrani",
+      description: "Sacred sambrani with a calming traditional fragrance.",
+      image: "/products/sambrani.png",
+    },
+    {
+      number: "08",
+      tamil: "தீப எண்ணெய்",
+      name: "Pooja Lamp Oil",
+      description: "Special oil prepared for lighting traditional pooja lamps.",
+      image: "/products/pooja-oil.png",
+    },
+    {
+      number: "09",
+      tamil: "பஞ்சுத் திரி",
+      name: "Cotton Wicks",
+      description: "Pure cotton wicks made for lamps and traditional diyas.",
+      image: "/products/cotton-wicks.png",
+    },
+    {
+      number: "10",
+      tamil: "பூஜை பாத்திரங்கள்",
+      name: "Pooja Essentials",
+      description: "Traditional brass items for temples and home prayer rooms.",
+      image: "/products/pooja-essentials.png",
+    },
+  ],
+
+  ta: [
+    {
+      number: "01",
+      tamil: "சந்தனம்",
+      name: "தூய சந்தனம்",
+      description: "பூஜை மற்றும் புனித அபிஷேகங்களுக்கான இயற்கை நறுமணம் நிறைந்த தூய சந்தனம்.",
+      image: "/products/sandal-paste.png",
+    },
+    {
+      number: "02",
+      tamil: "குங்குமம்",
+      name: "பாரம்பரிய குங்குமம்",
+      description: "கோவில் மற்றும் இல்ல வழிபாட்டிற்காக தயாரிக்கப்படும் மங்களகரமான குங்குமம்.",
+      image: "/products/kumkum.png",
+    },
+    {
+      number: "03",
+      tamil: "விபூதி",
+      name: "புனித விபூதி",
+      description: "தினசரி வழிபாடு மற்றும் இறை ஆசீர்வாதத்திற்கான பாரம்பரிய திருநீறு.",
+      image: "/products/vibhuti.png",
+    },
+    {
+      number: "04",
+      tamil: "மஞ்சள்",
+      name: "தூய மஞ்சள்",
+      description: "தூய்மை, பாதுகாப்பு மற்றும் செழிப்பைக் குறிக்கும் இயற்கை மஞ்சள்.",
+      image: "/products/turmeric.png",
+    },
+    {
+      number: "05",
+      tamil: "கற்பூரம்",
+      name: "பூஜை கற்பூரம்",
+      description: "தீபாராதனை மற்றும் தினசரி வழிபாட்டிற்கான தரமான கற்பூரம்.",
+      image: "/products/camphor.png",
+    },
+    {
+      number: "06",
+      tamil: "ஊதுபத்தி",
+      name: "நறுமண ஊதுபத்தி",
+      description: "பூஜை அறைக்கு இனிய ஆன்மீக நறுமணம் தரும் ஊதுபத்திகள்.",
+      image: "/products/incense-sticks.png",
+    },
+    {
+      number: "07",
+      tamil: "சாம்பிராணி",
+      name: "பாரம்பரிய சாம்பிராணி",
+      description: "அமைதியான சூழலை உருவாக்கும் பாரம்பரிய நறுமண சாம்பிராணி.",
+      image: "/products/sambrani.png",
+    },
+    {
+      number: "08",
+      tamil: "தீப எண்ணெய்",
+      name: "பூஜை தீப எண்ணெய்",
+      description: "பாரம்பரிய விளக்குகள் ஏற்றுவதற்காக தயாரிக்கப்பட்ட பூஜை எண்ணெய்.",
+      image: "/products/pooja-oil.png",
+    },
+    {
+      number: "09",
+      tamil: "பஞ்சுத் திரி",
+      name: "தூய பஞ்சுத் திரி",
+      description: "விளக்கு மற்றும் தீபம் ஏற்றுவதற்கான தரமான பஞ்சுத் திரிகள்.",
+      image: "/products/cotton-wicks.png",
+    },
+    {
+      number: "10",
+      tamil: "பூஜை பாத்திரங்கள்",
+      name: "பூஜை உபகரணங்கள்",
+      description: "கோவில் மற்றும் இல்ல வழிபாட்டிற்கான பாரம்பரிய பூஜைப் பாத்திரங்கள்.",
+      image: "/products/pooja-essentials.png",
+    },
+  ],
+};
 const abhishekamSlides = {
   en: [
     {
@@ -546,9 +621,41 @@ const activeRitual =
   </div>
 </section>
 
-      <section className="marquee" aria-label="Santhanal store highlights">
-        <div>✦ சந்தனத்தின் தூய்மை · PURE SANDALWOOD · MADURAI TRADITION · DIVINE FRAGRANCE · MEENAKSHI AMMAN BLESSINGS · ✦ சந்தனத்தின் தூய்மை · PURE SANDALWOOD · MADURAI TRADITION · DIVINE FRAGRANCE ·</div>
-      </section>
+    <section
+  className={`marquee ${language === "ta" ? "marquee-tamil" : ""}`}
+  aria-label={
+    language === "ta"
+      ? "சந்தனம் கடையின் சிறப்புகள்"
+      : "Santhanam Store highlights"
+  }
+>
+
+
+<section
+  className="marquee"
+  aria-label={
+    language === "ta"
+      ? "சந்தனம் கடையின் சிறப்புகள்"
+      : "Santhanam Store highlights"
+  }
+>
+  <div className="marquee-track">
+
+    <span>
+      {language === "ta"
+        ? "✦ சந்தனத்தின் தூய்மை · தூய சந்தனம் · மதுரையின் பாரம்பரியம் · தெய்வீக நறுமணம் · மீனாட்சி அம்மன் அருள் · பூஜையின் புனிதம் · பக்தியின் நறுமணம் · பாரம்பரிய பூஜைப் பொருட்கள் · மங்களம் நிறைந்த வழிபாடு · அம்மன் அருளுடன் ஒவ்வொரு தொடக்கமும் · தூய்மையான இறை சேவை · மதுரை மண்ணின் ஆன்மீக மரபு · இல்லம் நிறையும் இறை நறுமணம் · தலைமுறைகள் தொடரும் பாரம்பரியம் · மீனாட்சி தாயின் திருவருள் ✦"
+        : "✦ PURITY OF SANDALWOOD · PURE SANDALWOOD · MADURAI TRADITION · DIVINE FRAGRANCE · MEENAKSHI AMMAN BLESSINGS · SACRED POOJA ESSENTIALS · DEVOTION IN EVERY OFFERING · TRADITION FOR GENERATIONS ✦"}
+    </span>
+
+    <span aria-hidden="true">
+      {language === "ta"
+        ? "✦ சந்தனத்தின் தூய்மை · தூய சந்தனம் · மதுரையின் பாரம்பரியம் · தெய்வீக நறுமணம் · மீனாட்சி அம்மன் அருள் · பூஜையின் புனிதம் · பக்தியின் நறுமணம் · பாரம்பரிய பூஜைப் பொருட்கள் · மங்களம் நிறைந்த வழிபாடு · அம்மன் அருளுடன் ஒவ்வொரு தொடக்கமும் · தூய்மையான இறை சேவை · மதுரை மண்ணின் ஆன்மீக மரபு · இல்லம் நிறையும் இறை நறுமணம் · தலைமுறைகள் தொடரும் பாரம்பரியம் · மீனாட்சி தாயின் திருவருள் ✦"
+        : "✦ PURITY OF SANDALWOOD · PURE SANDALWOOD · MADURAI TRADITION · DIVINE FRAGRANCE · MEENAKSHI AMMAN BLESSINGS · SACRED POOJA ESSENTIALS · DEVOTION IN EVERY OFFERING · TRADITION FOR GENERATIONS ✦"}
+    </span>
+
+  </div>
+</section>
+</section>
 
      <section className="living-about" id="about">
   <div className="about-scene">
@@ -811,29 +918,59 @@ const activeRitual =
 </section>
 <section className="pooja-collection section" id="products">
   <div className="pooja-container">
-    <header className="pooja-heading">
-      <p className="kicker">SACRED POOJA COLLECTION</p>
 
-      <h2>
-        Traditional essentials for
-        <br />
-        <em>every sacred moment.</em>
+    <header className="pooja-heading">
+
+      <p className="kicker">
+        {language === "ta"
+          ? "புனித பூஜைப் பொருட்கள்"
+          : "SACRED POOJA COLLECTION"}
+      </p>
+
+      <h2 className={language === "ta" ? "pooja-tamil-title" : ""}>
+        {language === "ta" ? (
+          <>
+            பாரம்பரிய பூஜைப் பொருட்கள்
+            <br />
+            <em>ஒவ்வொரு புனித தருணத்திற்கும்.</em>
+          </>
+        ) : (
+          <>
+            Traditional essentials for
+            <br />
+            <em>every sacred moment.</em>
+          </>
+        )}
       </h2>
 
       <div className="pooja-title-bottom">
-        <span>பூஜைப் பொருட்கள்</span>
+
+        <span>
+          {language === "ta"
+            ? "பூஜைப் பொருட்கள்"
+            : "POOJA ESSENTIALS"}
+        </span>
 
         <p>
-          Carefully selected traditional products for temples,
-          ceremonies and everyday worship.
+          {language === "ta"
+            ? "கோவில், விசேஷ பூஜைகள் மற்றும் தினசரி வழிபாட்டிற்காக கவனமாக தேர்ந்தெடுக்கப்பட்ட பாரம்பரிய பொருட்கள்."
+            : "Carefully selected traditional products for temples, ceremonies and everyday worship."}
         </p>
+
       </div>
     </header>
 
     <div className="pooja-grid">
-      {poojaProducts.map((product) => (
-        <article className="pooja-card" key={product.number}>
+
+      {poojaProducts[language].map((product) => (
+
+        <article
+          className="pooja-card"
+          key={product.number}
+        >
+
           <div className="pooja-card-image">
+
             <img
               src={product.image}
               alt={`${product.name} - ${product.tamil}`}
@@ -843,31 +980,52 @@ const activeRitual =
               }}
             />
 
-            <span className="pooja-number">{product.number}</span>
+            <span className="pooja-number">
+              {product.number}
+            </span>
 
             <div className="pooja-image-overlay">
-              <span>View Collection</span>
+              <span>
+                {language === "ta"
+                  ? "தொகுப்பைப் பார்க்க"
+                  : "View Collection"}
+              </span>
+
               <b>↗</b>
             </div>
+
           </div>
 
           <div className="pooja-card-content">
-            <span className="pooja-tamil">{product.tamil}</span>
+
+            <span className="pooja-tamil">
+              {product.tamil}
+            </span>
+
             <h3>{product.name}</h3>
+
             <p>{product.description}</p>
 
             <div className="pooja-card-footer">
-              <span>Santhanal Store</span>
+              <span>
+                {language === "ta"
+                  ? "சந்தனம் கடை"
+                  : "Santhanam Store"}
+              </span>
+
               <i>✦</i>
             </div>
+
           </div>
         </article>
+
       ))}
+
     </div>
   </div>
 </section>
 
-      <section className="contact-premium" id="contact">
+ <section className="contact-premium" id="contact">
   <div className="contact-pattern" aria-hidden="true" />
   <div className="contact-sun contact-sun-one" aria-hidden="true" />
   <div className="contact-sun contact-sun-two" aria-hidden="true" />
@@ -876,13 +1034,25 @@ const activeRitual =
     <div className="contact-intro">
       <p className="contact-kicker">
         <span />
-        VISIT SANTHANAL STORE
+        {language === "ta"
+          ? "சந்தனம் கடைக்கு வருக"
+          : "VISIT SANTHANAM STORE"}
       </p>
 
-      <h2>
-        Take home a touch
-        <br />
-        of <em>divine tradition.</em>
+      <h2 className={language === "ta" ? "contact-tamil-title" : ""}>
+        {language === "ta" ? (
+          <>
+            இறை பாரம்பரியத்தின்
+            <br />
+            <em>புனித நறுமணத்தை இல்லம் கொண்டு செல்லுங்கள்.</em>
+          </>
+        ) : (
+          <>
+            Take home a touch
+            <br />
+            of <em>divine tradition.</em>
+          </>
+        )}
       </h2>
 
       <p className="contact-tamil">
@@ -890,9 +1060,9 @@ const activeRitual =
       </p>
 
       <p className="contact-description">
-        Visit our store for authentic sandalwood paste, kumkum,
-        vibhuti and carefully selected traditional pooja products.
-        We are happy to help you choose the right sacred essentials.
+        {language === "ta"
+          ? "தூய சந்தனம், குங்குமம், விபூதி மற்றும் பாரம்பரிய பூஜைப் பொருட்களுக்காக எங்கள் கடைக்கு வருக. உங்கள் வழிபாட்டிற்கு தேவையான பொருட்களை தேர்வு செய்ய அன்புடன் உதவுகிறோம்."
+          : "Visit our store for authentic sandalwood paste, kumkum, vibhuti and carefully selected traditional pooja products. We are happy to help you choose the right sacred essentials."}
       </p>
 
       <div className="contact-actions">
@@ -905,7 +1075,12 @@ const activeRitual =
           <span className="contact-button-icon">◉</span>
 
           <span>
-            <small>CHAT WITH US</small>
+            <small>
+              {language === "ta"
+                ? "எங்களுடன் பேசுங்கள்"
+                : "CHAT WITH US"}
+            </small>
+
             WhatsApp
           </span>
 
@@ -919,8 +1094,15 @@ const activeRitual =
           <span className="contact-button-icon">☎</span>
 
           <span>
-            <small>SPEAK WITH US</small>
-            Call Now
+            <small>
+              {language === "ta"
+                ? "தொலைபேசியில் பேசுங்கள்"
+                : "SPEAK WITH US"}
+            </small>
+
+            {language === "ta"
+              ? "அழைக்கவும்"
+              : "Call Now"}
           </span>
 
           <b>↗</b>
@@ -929,10 +1111,21 @@ const activeRitual =
 
       <div className="contact-blessing">
         <span>✦</span>
+
         <p>
-          “Purity in every product.
-          <br />
-          Devotion in every offering.”
+          {language === "ta" ? (
+            <>
+              “ஒவ்வொரு பொருளிலும் தூய்மை.
+              <br />
+              ஒவ்வொரு அர்ப்பணிப்பிலும் பக்தி.”
+            </>
+          ) : (
+            <>
+              “Purity in every product.
+              <br />
+              Devotion in every offering.”
+            </>
+          )}
         </p>
       </div>
     </div>
@@ -941,7 +1134,7 @@ const activeRitual =
       <div className="contact-image">
         <img
           src="/santhanal-store-contact.png"
-          alt="Santhanal traditional pooja products store in Madurai"
+          alt="Santhanam traditional pooja products store in Madurai"
         />
 
         <div className="contact-image-shade" />
@@ -950,8 +1143,17 @@ const activeRitual =
           <span>மதுரை</span>
 
           <div>
-            <small>OUR HOME</small>
-            <strong>Temple City</strong>
+            <small>
+              {language === "ta"
+                ? "எங்கள் ஊர்"
+                : "OUR HOME"}
+            </small>
+
+            <strong>
+              {language === "ta"
+                ? "கோவில் நகரம்"
+                : "Temple City"}
+            </strong>
           </div>
         </div>
       </div>
@@ -961,9 +1163,23 @@ const activeRitual =
           <span className="contact-detail-number">01</span>
 
           <div>
-            <small>STORE LOCATION</small>
-            <h3>Madurai, Tamil Nadu</h3>
-            <p>Full store address to be updated</p>
+            <small>
+              {language === "ta"
+                ? "கடை முகவரி"
+                : "STORE LOCATION"}
+            </small>
+
+            <h3>
+              {language === "ta"
+                ? "மதுரை, தமிழ்நாடு"
+                : "Madurai, Tamil Nadu"}
+            </h3>
+
+            <p>
+              {language === "ta"
+                ? "முழு கடை முகவரி இங்கே புதுப்பிக்கப்படும்"
+                : "Full store address to be updated"}
+            </p>
           </div>
 
           <a
@@ -980,14 +1196,31 @@ const activeRitual =
           <span className="contact-detail-number">02</span>
 
           <div>
-            <small>OPENING HOURS</small>
-            <h3>Open All Days</h3>
-            <p>Monday – Sunday · 8:00 AM – 9:00 PM</p>
+            <small>
+              {language === "ta"
+                ? "திறந்திருக்கும் நேரம்"
+                : "OPENING HOURS"}
+            </small>
+
+            <h3>
+              {language === "ta"
+                ? "அனைத்து நாட்களிலும் திறந்திருக்கும்"
+                : "Open All Days"}
+            </h3>
+
+            <p>
+              {language === "ta"
+                ? "திங்கள் – ஞாயிறு · காலை 8:00 – இரவு 9:00"
+                : "Monday – Sunday · 8:00 AM – 9:00 PM"}
+            </p>
           </div>
 
           <span className="store-status">
             <i />
-            OPEN
+
+            {language === "ta"
+              ? "திறந்துள்ளது"
+              : "OPEN"}
           </span>
         </article>
 
@@ -995,14 +1228,24 @@ const activeRitual =
           <span className="contact-detail-number">03</span>
 
           <div>
-            <small>PHONE &amp; WHATSAPP</small>
+            <small>
+              {language === "ta"
+                ? "தொலைபேசி & WHATSAPP"
+                : "PHONE & WHATSAPP"}
+            </small>
+
             <h3>+91 XXXXX XXXXX</h3>
-            <p>Call us for product availability and enquiries</p>
+
+            <p>
+              {language === "ta"
+                ? "பொருட்களின் கிடைக்கும் நிலை மற்றும் விசாரணைகளுக்கு எங்களை அழைக்கவும்"
+                : "Call us for product availability and enquiries"}
+            </p>
           </div>
 
           <a
             href="tel:+91XXXXXXXXXX"
-            aria-label="Call Santhanal Store"
+            aria-label="Call Santhanam Store"
           >
             ↗
           </a>
@@ -1013,7 +1256,7 @@ const activeRitual =
 
   <div className="contact-map">
     <iframe
-      title="Santhanal Store location in Madurai"
+      title="Santhanam Store location in Madurai"
       src="https://www.google.com/maps?q=Madurai,Tamil%20Nadu&output=embed"
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
@@ -1023,8 +1266,17 @@ const activeRitual =
       <span>✦</span>
 
       <div>
-        <small>FIND US IN</small>
-        <strong>Madurai</strong>
+        <small>
+          {language === "ta"
+            ? "எங்களை காணுங்கள்"
+            : "FIND US IN"}
+        </small>
+
+        <strong>
+          {language === "ta"
+            ? "மதுரை"
+            : "Madurai"}
+        </strong>
       </div>
 
       <a
@@ -1032,13 +1284,17 @@ const activeRitual =
         target="_blank"
         rel="noreferrer"
       >
-        Get Directions <b>↗</b>
+        {language === "ta"
+          ? "வழி காண"
+          : "Get Directions"}
+
+        <b>↗</b>
       </a>
     </div>
   </div>
 </section>
 
-     <footer className="site-footer">
+<footer className="site-footer">
   <div className="footer-decoration" aria-hidden="true">
     <span>✦</span>
     <i />
@@ -1049,19 +1305,25 @@ const activeRitual =
   <div className="footer-glow footer-glow-right" />
 
   <div className="footer-main">
+
     <div className="footer-brand-column">
       <a href="#home" className="footer-brand">
         <span className="footer-brand-mark">ஸ்ரீ</span>
 
         <div>
-          <strong>Santhanal</strong>
-          <small>SANDALWOOD STORE</small>
+          <strong>Santhanam</strong>
+          <small>
+            {language === "ta"
+              ? "சந்தனக் கடை"
+              : "SANDALWOOD STORE"}
+          </small>
         </div>
       </a>
 
       <p>
-        Pure fragrance, living tradition and divine blessings.
-        Authentic pooja essentials from the heart of Madurai.
+        {language === "ta"
+          ? "தூய நறுமணம், உயிரோட்டமிக்க பாரம்பரியம் மற்றும் இறை அருள். மதுரையின் இதயத்திலிருந்து பாரம்பரிய பூஜைப் பொருட்கள்."
+          : "Pure fragrance, living tradition and divine blessings. Authentic pooja essentials from the heart of Madurai."}
       </p>
 
       <span className="footer-tamil">
@@ -1069,11 +1331,12 @@ const activeRitual =
       </span>
 
       <div className="footer-socials">
+
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
-          aria-label="Follow Santhanal Store on Instagram"
+          aria-label="Instagram"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="3" y="3" width="18" height="18" rx="5" />
@@ -1088,7 +1351,7 @@ const activeRitual =
           href="https://www.facebook.com/"
           target="_blank"
           rel="noreferrer"
-          aria-label="Follow Santhanal Store on Facebook"
+          aria-label="Facebook"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1Z" />
@@ -1101,7 +1364,7 @@ const activeRitual =
           href="https://www.youtube.com/"
           target="_blank"
           rel="noreferrer"
-          aria-label="Visit Santhanal Store on YouTube"
+          aria-label="YouTube"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17.1 5.6 12 5.6 12 5.6s-5.1 0-6.9.5A3 3 0 0 0 3 8.2 31 31 0 0 0 2.6 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.8.5 6.9.5 6.9.5s5.1 0 6.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8Z" />
@@ -1115,7 +1378,7 @@ const activeRitual =
           href="https://wa.me/91XXXXXXXXXX"
           target="_blank"
           rel="noreferrer"
-          aria-label="Contact Santhanal Store on WhatsApp"
+          aria-label="WhatsApp"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7A8.5 8.5 0 1 1 20.5 11.7Z" />
@@ -1124,52 +1387,68 @@ const activeRitual =
 
           <span>WhatsApp</span>
         </a>
+
       </div>
     </div>
 
     <div className="footer-links-column">
-      <p className="footer-heading">EXPLORE</p>
+      <p className="footer-heading">
+        {language === "ta" ? "பக்கங்கள்" : "EXPLORE"}
+      </p>
 
       <nav className="footer-nav">
+
         <a href="#home">
           <span>01</span>
-          Home
+          {language === "ta" ? "முகப்பு" : "Home"}
         </a>
 
         <a href="#about">
           <span>02</span>
-          About Us
+          {language === "ta" ? "எங்களைப் பற்றி" : "About Us"}
         </a>
 
         <a href="#products">
           <span>03</span>
-          Pooja Products
+          {language === "ta" ? "பூஜைப் பொருட்கள்" : "Pooja Products"}
         </a>
 
         <a href="#tradition">
           <span>04</span>
-          Sacred Tradition
+          {language === "ta" ? "புனித பாரம்பரியம்" : "Sacred Tradition"}
         </a>
 
         <a href="#contact">
           <span>05</span>
-          Contact Us
+          {language === "ta" ? "தொடர்புக்கு" : "Contact Us"}
         </a>
+
       </nav>
     </div>
 
     <div className="footer-contact-column">
-      <p className="footer-heading">VISIT OUR STORE</p>
+      <p className="footer-heading">
+        {language === "ta"
+          ? "எங்கள் கடைக்கு வருக"
+          : "VISIT OUR STORE"}
+      </p>
 
       <div className="footer-contact-item">
         <span>⌖</span>
 
         <div>
-          <small>LOCATION</small>
+          <small>
+            {language === "ta" ? "முகவரி" : "LOCATION"}
+          </small>
+
           <p>
-            Santhanal Store
+            {language === "ta"
+              ? "சந்தனம் கடை"
+              : "Santhanam Store"}
             <br />
-            Madurai, Tamil Nadu
+            {language === "ta"
+              ? "மதுரை, தமிழ்நாடு"
+              : "Madurai, Tamil Nadu"}
           </p>
         </div>
       </div>
@@ -1178,7 +1457,12 @@ const activeRitual =
         <span>☎</span>
 
         <div>
-          <small>PHONE / WHATSAPP</small>
+          <small>
+            {language === "ta"
+              ? "தொலைபேசி / WHATSAPP"
+              : "PHONE / WHATSAPP"}
+          </small>
+
           <a href="tel:+91XXXXXXXXXX">
             +91 XXXXX XXXXX
           </a>
@@ -1189,7 +1473,12 @@ const activeRitual =
         <span>✉</span>
 
         <div>
-          <small>EMAIL ADDRESS</small>
+          <small>
+            {language === "ta"
+              ? "மின்னஞ்சல்"
+              : "EMAIL ADDRESS"}
+          </small>
+
           <a href="mailto:contact@santhanalstore.com">
             contact@santhanalstore.com
           </a>
@@ -1198,56 +1487,119 @@ const activeRitual =
     </div>
 
     <div className="footer-hours-column">
-      <p className="footer-heading">OPENING HOURS</p>
+      <p className="footer-heading">
+        {language === "ta"
+          ? "திறந்திருக்கும் நேரம்"
+          : "OPENING HOURS"}
+      </p>
 
       <div className="footer-hours">
+
         <div>
-          <span>Monday – Saturday</span>
-          <strong>8:00 AM – 9:00 PM</strong>
+          <span>
+            {language === "ta"
+              ? "திங்கள் – சனி"
+              : "Monday – Saturday"}
+          </span>
+
+          <strong>
+            {language === "ta"
+              ? "காலை 8:00 – இரவு 9:00"
+              : "8:00 AM – 9:00 PM"}
+          </strong>
         </div>
 
         <div>
-          <span>Sunday</span>
-          <strong>8:00 AM – 9:00 PM</strong>
+          <span>
+            {language === "ta" ? "ஞாயிறு" : "Sunday"}
+          </span>
+
+          <strong>
+            {language === "ta"
+              ? "காலை 8:00 – இரவு 9:00"
+              : "8:00 AM – 9:00 PM"}
+          </strong>
         </div>
 
         <div>
-          <span>Festival Days</span>
-          <strong>Open All Day</strong>
+          <span>
+            {language === "ta"
+              ? "திருவிழா நாட்கள்"
+              : "Festival Days"}
+          </span>
+
+          <strong>
+            {language === "ta"
+              ? "நாள் முழுவதும் திறந்திருக்கும்"
+              : "Open All Day"}
+          </strong>
         </div>
+
       </div>
 
       <div className="footer-open-status">
         <i />
+
         <div>
-          <small>STORE STATUS</small>
-          <strong>Open All Days</strong>
+          <small>
+            {language === "ta"
+              ? "கடை நிலை"
+              : "STORE STATUS"}
+          </small>
+
+          <strong>
+            {language === "ta"
+              ? "அனைத்து நாட்களிலும் திறந்திருக்கும்"
+              : "Open All Days"}
+          </strong>
         </div>
       </div>
     </div>
+
   </div>
 
   <div className="footer-mantra">
     <span>✦</span>
-    <p>பாண்டிய குலப் பேரரசி! மதுரை மீனாட்சி தாயே!</p>
+
+    <p>
+      பாண்டிய குலப் பேரரசி! மதுரை மீனாட்சி தாயே!
+    </p>
+
     <span>✦</span>
   </div>
 
   <div className="footer-bottom">
+
     <small>
-      © 2026 Santhanal Store, Madurai. All rights reserved.
+      {language === "ta"
+        ? "© 2026 சந்தனம் கடை, மதுரை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
+        : "© 2026 Santhanam Store, Madurai. All rights reserved."}
     </small>
 
     <div>
-      <a href="#home">Privacy Policy</a>
+      <a href="#home">
+        {language === "ta"
+          ? "தனியுரிமைக் கொள்கை"
+          : "Privacy Policy"}
+      </a>
+
       <span>•</span>
-      <a href="#home">Terms &amp; Conditions</a>
+
+      <a href="#home">
+        {language === "ta"
+          ? "விதிமுறைகள்"
+          : "Terms & Conditions"}
+      </a>
     </div>
 
     <a href="#home" className="footer-back-top">
-      BACK TO TOP
+      {language === "ta"
+        ? "மேலே செல்ல"
+        : "BACK TO TOP"}
+
       <span>↑</span>
     </a>
+
   </div>
 </footer>
     </main>
