@@ -1,12 +1,37 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../components/LanguageProvider";
-
+import { useCart } from "../../components/CartProvider";
 
 export default function ProductsPage() {
+    const { cartItems, addToCart } = useCart();
   const { language } = useLanguage();
     const [heroSlide, setHeroSlide] = useState(0);
+  const [selectedProducts, setSelectedProducts] = useState<any[]>([]);
+const [showForm, setShowForm] = useState(false);
 
+const [customer, setCustomer] = useState({
+  name: "",
+  phone: "",
+  email: "",
+});
+const addProduct = (product: any) => {
+  const alreadyAdded = selectedProducts.find(
+    (item) => item.number === product.number
+  );
+
+  if (alreadyAdded) {
+    return;
+  }
+
+  setSelectedProducts([
+    ...selectedProducts,
+    {
+      ...product,
+      quantity: 1,
+    },
+  ]);
+};
 const heroSlides = [
   {
     image: "pro1.png",
@@ -401,6 +426,22 @@ const heroContent = currentHero[language];
             <h3>{product.name}</h3>
 
             <p>{product.description}</p>
+<button
+  type="button"
+  className="pooja-select-product-btn"
+  onClick={() => addToCart(product)}
+>
+  {cartItems.some(
+    (item) => item.number === product.number
+  )
+    ? language === "ta"
+      ? "சேர்க்கப்பட்டது ✓"
+      : "Added ✓"
+    : language === "ta"
+      ? "கார்டில் சேர்க்க"
+      : "Add to Cart"}
+</button>
+
 
             <div className="pooja-card-footer">
               <span>
@@ -410,6 +451,7 @@ const heroContent = currentHero[language];
               </span>
 
               <i>✦</i>
+              
             </div>
 
           </div>

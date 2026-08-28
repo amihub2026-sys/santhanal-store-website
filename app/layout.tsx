@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { LanguageProvider } from "../components/LanguageProvider";
 import Footer from "../components/Footer";
+import { CartProvider } from "../components/CartProvider";
 export const metadata: Metadata = {
   metadataBase: new URL("https://santhanal-store.amihub2026.chatgpt.site"),
   title: "Santhanal Store | Pure Sandalwood Tradition in Madurai",
@@ -30,13 +31,13 @@ export default function RootLayout({
   return (
     <html lang="ta">
       <body>
-        <LanguageProvider>
-          <Navbar />
-
-          {children}
-
-          <Footer />
-        </LanguageProvider>
+      <LanguageProvider>
+  <CartProvider>
+    <Navbar />
+    {children}
+    <Footer />
+  </CartProvider>
+</LanguageProvider>
       </body>
     </html>
   );

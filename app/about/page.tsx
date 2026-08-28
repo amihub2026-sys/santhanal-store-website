@@ -1,43 +1,64 @@
 "use client";
 
 import { useLanguage } from "../../components/LanguageProvider";
-
+import { useState } from "react";
 export default function AboutPage() {
   const { language } = useLanguage();
+const [activeValueCard, setActiveValueCard] =
+  useState<number | null>(null);
 
-  const values = [
-    {
-      no: "01",
-      symbol: "✦",
-      titleTa: "தூய்மை",
-      titleEn: "Purity",
-      textTa:
-        "இறை வழிபாட்டிற்கான ஒவ்வொரு பொருளிலும் தரமும் தூய்மையும் எங்களின் முதன்மை.",
-      textEn:
-        "Quality and purity remain at the heart of every sacred product we offer.",
-    },
-    {
-      no: "02",
-      symbol: "❋",
-      titleTa: "பாரம்பரியம்",
-      titleEn: "Tradition",
-      textTa:
-        "மதுரையின் ஆன்மீக மரபையும் தலைமுறைகள் தொடரும் வழிபாட்டு பாரம்பரியத்தையும் மதிக்கிறோம்.",
-      textEn:
-        "We honour Madurai's spiritual heritage and traditions carried through generations.",
-    },
-    {
-      no: "03",
-      symbol: "◇",
-      titleTa: "நம்பிக்கை",
-      titleEn: "Trust",
-      textTa:
-        "வாடிக்கையாளர்களின் நம்பிக்கையை தரமான பொருட்களாலும் அன்பான சேவையாலும் காக்கிறோம்.",
-      textEn:
-        "We build lasting trust through dependable products and warm personal service.",
-    },
-  ];
+const values = [
+  {
+    no: "01",
+    symbol: "✦",
 
+    titleTa: "தூய்மை",
+    titleEn: "Purity",
+
+    textTa:
+      "இறை வழிபாட்டிற்கான ஒவ்வொரு பொருளிலும் தரமும் தூய்மையும் எங்களின் முதன்மை.",
+
+    textEn:
+      "Quality and purity remain at the heart of every sacred product we offer.",
+
+    image: "why1.jpg",
+    video: "why1.mp4",
+  },
+
+  {
+    no: "02",
+    symbol: "❋",
+
+    titleTa: "பாரம்பரியம்",
+    titleEn: "Tradition",
+
+    textTa:
+      "மதுரையின் ஆன்மீக மரபையும் தலைமுறைகள் தொடரும் வழிபாட்டு பாரம்பரியத்தையும் மதிக்கிறோம்.",
+
+    textEn:
+      "We honour Madurai's spiritual heritage and traditions carried through generations.",
+
+    image: "why2.jpg",
+    video: "why2.mp4",
+  },
+
+  {
+    no: "03",
+    symbol: "◇",
+
+    titleTa: "நம்பிக்கை",
+    titleEn: "Trust",
+
+    textTa:
+      "வாடிக்கையாளர்களின் நம்பிக்கையை தரமான பொருட்களாலும் அன்பான சேவையாலும் காக்கிறோம்.",
+
+    textEn:
+      "We build lasting trust through dependable products and warm personal service.",
+
+    image: "why3.jpg",
+    video: "why3.mp4",
+  },
+];
   return (
     <main className="about-page">
 
@@ -202,74 +223,103 @@ export default function AboutPage() {
       {/* =================================
           OUR VALUES
       ================================= */}
+<div className="about-values-grid">
 
-      <section className="about-values">
+  {values.map((item, index) => (
 
-        <div className="about-values-heading">
+    <article
+      className={`about-value-card ${
+        activeValueCard === index
+          ? "value-video-active"
+          : ""
+      }`}
+      key={item.no}
+      onClick={() =>
+        setActiveValueCard(
+          activeValueCard === index
+            ? null
+            : index
+        )
+      }
+    >
 
-          <p className="about-section-kicker">
-            <span />
+      {/* BACKGROUND IMAGE */}
 
+      <img
+        className="about-value-bg-image"
+        src={item.image}
+        alt={
+          language === "ta"
+            ? item.titleTa
+            : item.titleEn
+        }
+      />
+
+
+      {/* BACKGROUND VIDEO */}
+
+      <video
+        className="about-value-bg-video"
+        src={item.video}
+        muted
+        loop
+        playsInline
+        autoPlay
+      />
+
+
+      {/* OVERLAY */}
+
+      <div className="about-value-overlay" />
+
+
+      {/* CONTENT */}
+
+      <div className="about-value-card-inner">
+
+        <span className="about-value-number">
+          {item.no}
+        </span>
+
+        <div className="about-value-bottom">
+
+          <div className="about-value-symbol">
+            {item.symbol}
+          </div>
+
+          <h3>
             {language === "ta"
-              ? "எங்கள் அடிப்படை"
-              : "WHAT WE STAND FOR"}
+              ? item.titleTa
+              : item.titleEn}
+          </h3>
+
+          <p>
+            {language === "ta"
+              ? item.textTa
+              : item.textEn}
           </p>
 
-          <h2>
-            {language === "ta" ? (
-              <>
-                எங்களை வழிநடத்தும்
-                <br />
-                <em>மூன்று மதிப்புகள்.</em>
-              </>
-            ) : (
-              <>
-                Three values that
-                <br />
-                <em>guide everything we do.</em>
-              </>
-            )}
-          </h2>
+          <div className="about-value-watch">
+
+            <span>
+              {language === "ta"
+                ? "வீடியோ பார்க்க"
+                : "View Story"}
+            </span>
+
+            <b>↗</b>
+
+          </div>
 
         </div>
 
+      </div>
 
-        <div className="about-values-grid">
+    </article>
 
-          {values.map((item) => (
-            <article
-              className="about-value-card"
-              key={item.no}
-            >
+  ))}
 
-              <span className="about-value-number">
-                {item.no}
-              </span>
-
-              <div className="about-value-symbol">
-                {item.symbol}
-              </div>
-
-              <h3>
-                {language === "ta"
-                  ? item.titleTa
-                  : item.titleEn}
-              </h3>
-
-              <p>
-                {language === "ta"
-                  ? item.textTa
-                  : item.textEn}
-              </p>
-
-              <span className="about-value-line" />
-
-            </article>
-          ))}
-
-        </div>
-
-      </section>
+</div>
 
 
       {/* =================================
