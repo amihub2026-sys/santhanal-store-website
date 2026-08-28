@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import Navbar from "../components/Navbar";
+import { LanguageProvider } from "../components/LanguageProvider";
+import Footer from "../components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://santhanal-store.amihub2026.chatgpt.site"),
   title: "Santhanal Store | Pure Sandalwood Tradition in Madurai",
@@ -20,6 +22,22 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="ta">
+      <body>
+        <LanguageProvider>
+          <Navbar />
+
+          {children}
+
+          <Footer />
+        </LanguageProvider>
+      </body>
+    </html>
+  );
 }
