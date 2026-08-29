@@ -6738,215 +6738,7 @@
   }
 
 
-  /* =========================
-     HOME HERO
-  ========================= */
-
-  .scroll-story {
-    width: 100% !important;
-
-    height: 350vh;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: #130701;
-  }
-
-  .story-stage {
-    position: sticky;
-
-    top: 0;
-
-    width: 100% !important;
-    height: 100vh !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    overflow: hidden;
-
-    background: #130701;
-  }
-
-
-  /* HERO IMAGE - IMPORTANT FIX */
-
-  .story-background {
-    position: absolute !important;
-
-    inset: 0 !important;
-
-    width: 100% !important;
-    height: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    object-fit: cover !important;
-
-    /*
-       On mobile the temple should fill
-       the entire screen.
-    */
-    object-position: 50% center !important;
-
-    transform: none !important;
-  }
-
-
-  .story-tint,
-  .story-grain {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-  }
-
-
-  /* HERO TEXT */
-
-  .story-copy {
-    position: absolute;
-
-    inset: 0;
-
-    width: 100% !important;
-    height: 100%;
-
-    padding:
-      100px
-      16px
-      80px !important;
-
-    display: flex;
-    align-items: flex-end;
-
-    box-sizing: border-box;
-  }
-
-  .story-panel {
-    width: 100% !important;
-    max-width: 100% !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box;
-  }
-
-  .story-panel > p {
-    font-size: 7px;
-
-    letter-spacing: 0.2em;
-  }
-
-
-  /* ENGLISH HERO TITLE */
-
-  .story-panel h1 {
-    width: 100%;
-
-    margin:
-      18px
-      0
-      23px;
-
-    font-size: 48px !important;
-    line-height: 0.9 !important;
-
-    overflow-wrap: anywhere;
-  }
-
-
-  /* TAMIL HERO TITLE */
-
-  .story-panel h1.tamil-title {
-    width: 100%;
-
-    font-size: clamp(
-      30px,
-      10vw,
-      42px
-    ) !important;
-
-    line-height: 1.2 !important;
-
-    letter-spacing: 0 !important;
-
-    overflow-wrap: anywhere;
-  }
-
-
-  /* HERO BODY */
-
-  .story-body {
-    width: 100%;
-    max-width: 100%;
-
-    gap: 11px;
-  }
-
-  .story-body i {
-    padding-right: 10px;
-
-    font-size: 13px;
-  }
-
-  .story-body p {
-    margin: 0;
-
-    font-size: 14px !important;
-    line-height: 1.55;
-
-    overflow-wrap: anywhere;
-  }
-
-
-  /* HERO COUNTER */
-
-  .story-counter {
-    display: none;
-  }
-
-
-  /* HERO PROGRESS */
-
-  .story-progress {
-    left: 16px !important;
-    right: 16px !important;
-
-    bottom: 25px;
-  }
-
-  .story-progress p {
-    font-size: 6px;
-
-    letter-spacing: 0.17em;
-  }
-
-
-  /* =========================
-     MARQUEE
-  ========================= */
-
-  .marquee {
-    width: 100%;
-
-    height: 54px;
-
-    margin: 0;
-    padding: 0;
-
-    overflow: hidden;
-  }
-
-  .marquee-track {
-    width: max-content;
-  }
+ 
 
 
   /* =========================
@@ -7347,4 +7139,68 @@
     box-sizing: border-box;
   }
 
+}
+@media (max-width: 600px) {
+
+  .scroll-story {
+    height: 100vh;
+  }
+
+  .story-stage {
+    height: 100vh;
+  }
+
+  .story-copy {
+    padding: 95px 16px 80px;
+  }
+
+  .story-panel {
+    width: calc(100% - 32px);
+    max-width: 100%;
+  }
+
+  .story-panel > p {
+    font-size: 7px;
+    letter-spacing: 0.18em;
+  }
+
+  .story-panel h1 {
+    font-size: 44px;
+    line-height: 0.95;
+    margin: 18px 0 22px;
+  }
+
+  .story-panel h1.tamil-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .story-body {
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .story-body i {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+
+  .story-body p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .story-progress {
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+  }
+
+  .story-progress p {
+    font-size: 6px;
+  }
+
+  .story-counter {
+    display: none;
+  }
 }
