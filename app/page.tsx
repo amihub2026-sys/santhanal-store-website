@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "../components/LanguageProvider";
 const heroLines = {
   en: [
     {
@@ -232,7 +233,7 @@ const abhishekamSlides = {
 };
 export default function Home() {
   const storyRef = useRef<HTMLElement>(null);
-const [language, setLanguage] = useState<"en" | "ta">("ta");
+  const { language } = useLanguage();
   const [heroStep, setHeroStep] = useState(0);
   const [topic, setTopic] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
