@@ -42,7 +42,7 @@ export default function ContactPage() {
 
     <div className="contact-page-hero-actions">
       <a
-        href="https://wa.me/91XXXXXXXXXX"
+           href="https://wa.me/919789815039"
         target="_blank"
         rel="noreferrer"
         className="contact-page-hero-btn"
@@ -122,7 +122,7 @@ export default function ContactPage() {
       <div className="contact-actions">
         <a
           className="contact-button contact-whatsapp"
-          href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919789815039"
           target="_blank"
           rel="noreferrer"
         >
@@ -143,7 +143,7 @@ export default function ContactPage() {
 
         <a
           className="contact-button contact-call"
-          href="tel:+91XXXXXXXXXX"
+          href="tel:+919789815039"
         >
           <span className="contact-button-icon">☎</span>
 
@@ -288,7 +288,7 @@ export default function ContactPage() {
                 : "PHONE & WHATSAPP"}
             </small>
 
-            <h3>+91 XXXXX XXXXX</h3>
+            <h3>9197898 15039</h3>
 
             <p>
               {language === "ta"
@@ -298,7 +298,7 @@ export default function ContactPage() {
           </div>
 
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919789815039"
             aria-label="Call Santhanam Store"
           >
             ↗
