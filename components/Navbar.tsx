@@ -60,7 +60,7 @@ ${productLines}
 Please contact me regarding these products.
   `.trim();
 
-  const whatsappNumber = "7550008588";
+  const whatsappNumber = "97898 15039";
 
   const whatsappUrl =
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -77,12 +77,20 @@ Please contact me regarding these products.
           href="/"
           aria-label="Santhanam Store home"
         >
-          <span className="brand-mark">ஸ்ரீ</span>
+          <span className="brand-mark"></span>
+<span className="brand-text">
+  <strong>
+    {language === "ta"
+      ? "அசல் சிச்சாபாய்"
+      : "Asal Sichabai"}
+  </strong>
 
-          <span>
-            <strong>Santhanam</strong>
-            <small>SANDALWOOD STORE</small>
-          </span>
+  <small>
+    {language === "ta"
+      ? "சந்தனக் கடை"
+      : "Sandhana Kadai"}
+  </small>
+</span>
         </a>
 
 
