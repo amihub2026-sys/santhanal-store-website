@@ -20,24 +20,33 @@ const [customer, setCustomer] = useState({
   phone: "",
   email: "",
 });
- const sendToWhatsApp = () => {
-  if (!customer.name.trim() || !customer.phone.trim()) {
+const sendToWhatsApp = () => {
+
+  if (
+    !customer.name.trim() ||
+    !customer.phone.trim()
+  ) {
     alert(
       language === "ta"
         ? "பெயர் மற்றும் தொலைபேசி எண்ணை உள்ளிடவும்."
         : "Please enter your name and phone number."
     );
+
     return;
   }
 
+
   if (cartItems.length === 0) {
+
     alert(
       language === "ta"
         ? "முதலில் ஒரு பொருளை சேர்க்கவும்."
         : "Please add at least one product."
     );
+
     return;
   }
+
 
   const productLines = cartItems
     .map(
@@ -46,26 +55,34 @@ const [customer, setCustomer] = useState({
     )
     .join("\n");
 
-  const message = `
-Hello Santhanam Store,
+
+  const message =
+`Hello Santhanam Store,
 
 Customer Details:
+
 Name: ${customer.name}
 Phone: ${customer.phone}
 Email: ${customer.email || "-"}
 
 Selected Products:
+
 ${productLines}
 
-Please contact me regarding these products.
-  `.trim();
+Please contact me regarding these products.`;
 
-  const whatsappNumber = "9789815039";
+
+  // INDIA COUNTRY CODE +91
+  const whatsappNumber = "919789815039";
+
 
   const whatsappUrl =
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
-  window.open(whatsappUrl, "_blank");
+
+  // Better for mobile
+  window.location.href = whatsappUrl;
+
 };
   return (
     <>
