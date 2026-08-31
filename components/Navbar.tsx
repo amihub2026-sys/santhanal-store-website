@@ -60,7 +60,7 @@ ${productLines}
 Please contact me regarding these products.
   `.trim();
 
-  const whatsappNumber = "97898 15039";
+  const whatsappNumber = "9789815039";
 
   const whatsappUrl =
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
