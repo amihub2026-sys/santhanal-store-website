@@ -19,10 +19,14 @@ export default function Footer() {
       <div className="footer-main">
         <div className="footer-brand-column">
           <a href="/" className="footer-brand">
-            <span className="footer-brand-mark">ஸ்ரீ</span>
+            <span className="footer-brand-mark"></span>
 
             <div>
-              <strong>Santhanam</strong>
+            <strong>
+    {language === "ta"
+      ? "அசல் சிச்சாபாய்"
+      : "Asal Sichabai"}
+  </strong>
               <small>
                 {language === "ta"
                   ? "சந்தனக் கடை"
@@ -70,7 +74,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+             href="https://wa.me/919789815039"
               target="_blank"
               rel="noreferrer"
               aria-label="WhatsApp"
@@ -150,8 +154,8 @@ export default function Footer() {
                   : "PHONE / WHATSAPP"}
               </small>
 
-              <a href="tel:+91XXXXXXXXXX">
-                +91 XXXXX XXXXX
+              <a href="tel:+9197898 15039">
+               +9197898 15039
               </a>
             </div>
           </div>
