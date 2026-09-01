@@ -87,28 +87,33 @@ Please contact me regarding these products.`;
   return (
     <>
       <header className="site-header">
+{/* LOGO */}
+<a
+  className="brand"
+  href="/"
+  aria-label="Asal Sichabai Sandhana Kadai home"
+>
+  <span className="brand-mark">
+    <img
+      src="moon.png"
+      alt="Asal Sichabai logo"
+    />
+  </span>
 
-        {/* LOGO */}
-        <a
-          className="brand"
-          href="/"
-          aria-label="Santhanam Store home"
-        >
-          <span className="brand-mark"></span>
-<span className="brand-text">
-  <strong>
-    {language === "ta"
-      ? "அசல் சிச்சாபாய்"
-      : "Asal Sichabai"}
-  </strong>
+  <span className="brand-text">
+    <strong>
+      {language === "ta"
+        ? "அசல் சிச்சாபாய்"
+        : "Asal Sichabai"}
+    </strong>
 
-  <small>
-    {language === "ta"
-      ? "சந்தனக் கடை"
-      : "Sandhana Kadai"}
-  </small>
-</span>
-        </a>
+    <small>
+      {language === "ta"
+        ? "சந்தனக் கடை"
+        : "Sandhana Kadai"}
+    </small>
+  </span>
+</a>
 
 
         {/* DESKTOP NAVIGATION */}
@@ -141,7 +146,7 @@ Please contact me regarding these products.`;
           </a>
 
           <a
-            className="nav-cta"
+          
             href="/contact"
           >
             {language === "ta"
@@ -156,8 +161,18 @@ Please contact me regarding these products.`;
   type="button"
   className="navbar-cart-button"
   onClick={() => setShowCart(true)}
+  aria-label="Open shopping cart"
 >
-  <span className="navbar-cart-icon">🛒</span>
+  <svg
+    className="navbar-cart-icon"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path d="M3 3h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.3 7H6" />
+
+    <circle cx="9.5" cy="19" r="1.5" />
+    <circle cx="17" cy="19" r="1.5" />
+  </svg>
 
   {cartItems.length > 0 && (
     <span className="navbar-cart-count">
@@ -165,7 +180,6 @@ Please contact me regarding these products.`;
     </span>
   )}
 </button>
-
 
         {/* LANGUAGE BUTTON */}
         <button
