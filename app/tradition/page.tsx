@@ -143,7 +143,11 @@ export default function TraditionPage() {
 
       <div className="sacred-center-inner">
 
-        <span className="sacred-om">ॐ</span>
+  <img
+  src="/om.png"
+  alt="Om"
+  className="blessing-om"
+/>
 
         <small>
           {language === "ta"

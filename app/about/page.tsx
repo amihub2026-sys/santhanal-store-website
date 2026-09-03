@@ -467,9 +467,11 @@ const values = [
 
       <section className="about-closing">
 
-        <span className="about-closing-symbol">
-          ॐ
-        </span>
+<img
+  src="/om.png"
+  alt="Om"
+  className="blessing-om"
+/>
 
         <p>
           {language === "ta"
