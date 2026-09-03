@@ -113,153 +113,364 @@ const previousHeroSlide = () => {
 
 const currentHero = heroSlides[heroSlide];
 const heroContent = currentHero[language];
-    const poojaProducts = {
-      en: [
-        {
-          number: "01",
-          tamil: "சந்தனம்",
-          name: "Pure Sandal Paste",
-          description: "Pure fragrant sandal paste for pooja and sacred abhishekam.",
-          image: "/products/sandal-paste.png",
-        },
-        {
-          number: "02",
-          tamil: "குங்குமம்",
-          name: "Traditional Kumkum",
-          description: "Auspicious kumkum prepared for temple and home worship.",
-          image: "/products/kumkum.png",
-        },
-        {
-          number: "03",
-          tamil: "விபூதி",
-          name: "Sacred Vibhuti",
-          description: "Traditional sacred ash for daily prayers and blessings.",
-          image: "/products/vibhuti.png",
-        },
-        {
-          number: "04",
-          tamil: "மஞ்சள்",
-          name: "Turmeric Powder",
-          description: "Natural turmeric representing purity, protection and prosperity.",
-          image: "/products/turmeric.png",
-        },
-        {
-          number: "05",
-          tamil: "கற்பூரம்",
-          name: "Pooja Camphor",
-          description: "Clean-burning camphor for traditional deeparadhana.",
-          image: "/products/camphor.png",
-        },
-        {
-          number: "06",
-          tamil: "ஊதுபத்தி",
-          name: "Incense Sticks",
-          description: "Long-lasting devotional fragrance for your prayer space.",
-          image: "/products/incense-sticks.png",
-        },
-        {
-          number: "07",
-          tamil: "சாம்பிராணி",
-          name: "Traditional Sambrani",
-          description: "Sacred sambrani with a calming traditional fragrance.",
-          image: "/products/sambrani.png",
-        },
-        {
-          number: "08",
-          tamil: "தீப எண்ணெய்",
-          name: "Pooja Lamp Oil",
-          description: "Special oil prepared for lighting traditional pooja lamps.",
-          image: "/products/pooja-oil.png",
-        },
-        {
-          number: "09",
-          tamil: "பஞ்சுத் திரி",
-          name: "Cotton Wicks",
-          description: "Pure cotton wicks made for lamps and traditional diyas.",
-          image: "/products/cotton-wicks.png",
-        },
-        {
-          number: "10",
-          tamil: "பூஜை பாத்திரங்கள்",
-          name: "Pooja Essentials",
-          description: "Traditional brass items for temples and home prayer rooms.",
-          image: "/products/pooja-essentials.png",
-        },
-      ],
-    
-      ta: [
-        {
-          number: "01",
-          tamil: "சந்தனம்",
-          name: "தூய சந்தனம்",
-          description: "பூஜை மற்றும் புனித அபிஷேகங்களுக்கான இயற்கை நறுமணம் நிறைந்த தூய சந்தனம்.",
-          image: "/products/sandal-paste.png",
-        },
-        {
-          number: "02",
-          tamil: "குங்குமம்",
-          name: "பாரம்பரிய குங்குமம்",
-          description: "கோவில் மற்றும் இல்ல வழிபாட்டிற்காக தயாரிக்கப்படும் மங்களகரமான குங்குமம்.",
-          image: "/products/kumkum.png",
-        },
-        {
-          number: "03",
-          tamil: "விபூதி",
-          name: "புனித விபூதி",
-          description: "தினசரி வழிபாடு மற்றும் இறை ஆசீர்வாதத்திற்கான பாரம்பரிய திருநீறு.",
-          image: "/products/vibhuti.png",
-        },
-        {
-          number: "04",
-          tamil: "மஞ்சள்",
-          name: "தூய மஞ்சள்",
-          description: "தூய்மை, பாதுகாப்பு மற்றும் செழிப்பைக் குறிக்கும் இயற்கை மஞ்சள்.",
-          image: "/products/turmeric.png",
-        },
-        {
-          number: "05",
-          tamil: "கற்பூரம்",
-          name: "பூஜை கற்பூரம்",
-          description: "தீபாராதனை மற்றும் தினசரி வழிபாட்டிற்கான தரமான கற்பூரம்.",
-          image: "/products/camphor.png",
-        },
-        {
-          number: "06",
-          tamil: "ஊதுபத்தி",
-          name: "நறுமண ஊதுபத்தி",
-          description: "பூஜை அறைக்கு இனிய ஆன்மீக நறுமணம் தரும் ஊதுபத்திகள்.",
-          image: "/products/incense-sticks.png",
-        },
-        {
-          number: "07",
-          tamil: "சாம்பிராணி",
-          name: "பாரம்பரிய சாம்பிராணி",
-          description: "அமைதியான சூழலை உருவாக்கும் பாரம்பரிய நறுமண சாம்பிராணி.",
-          image: "/products/sambrani.png",
-        },
-        {
-          number: "08",
-          tamil: "தீப எண்ணெய்",
-          name: "பூஜை தீப எண்ணெய்",
-          description: "பாரம்பரிய விளக்குகள் ஏற்றுவதற்காக தயாரிக்கப்பட்ட பூஜை எண்ணெய்.",
-          image: "/products/pooja-oil.png",
-        },
-        {
-          number: "09",
-          tamil: "பஞ்சுத் திரி",
-          name: "தூய பஞ்சுத் திரி",
-          description: "விளக்கு மற்றும் தீபம் ஏற்றுவதற்கான தரமான பஞ்சுத் திரிகள்.",
-          image: "/products/cotton-wicks.png",
-        },
-        {
-          number: "10",
-          tamil: "பூஜை பாத்திரங்கள்",
-          name: "பூஜை உபகரணங்கள்",
-          description: "கோவில் மற்றும் இல்ல வழிபாட்டிற்கான பாரம்பரிய பூஜைப் பாத்திரங்கள்.",
-          image: "/products/pooja-essentials.png",
-        },
-      ],
-    };
+  const poojaProducts = [
+  {
+    number: "01",
+    tamil: "சந்தனம்",
+    image: "/p4.jpeg",
+
+    en: {
+      name: "Pure Sandal Paste",
+      description:
+        "Pure fragrant sandal paste for pooja and sacred abhishekam.",
+    },
+
+    ta: {
+      name: "தூய சந்தனம்",
+      description:
+        "பூஜை மற்றும் புனித அபிஷேகங்களுக்கான இயற்கை நறுமணம் நிறைந்த தூய சந்தனம்.",
+    },
+  },
+
+  {
+    number: "02",
+    tamil: "குங்குமம்",
+    image: "/p5.jpeg",
+
+    en: {
+      name: "Traditional Kumkum",
+      description:
+        "Auspicious kumkum prepared for temple and home worship.",
+    },
+
+    ta: {
+      name: "பாரம்பரிய குங்குமம்",
+      description:
+        "கோவில் மற்றும் இல்ல வழிபாட்டிற்காக தயாரிக்கப்படும் மங்களகரமான குங்குமம்.",
+    },
+  },
+
+  {
+    number: "03",
+    tamil: "விபூதி",
+    image: "/p19.png",
+
+    en: {
+      name: "Sacred Vibhuti",
+      description:
+        "Traditional sacred ash for daily prayers and blessings.",
+    },
+
+    ta: {
+      name: "புனித விபூதி",
+      description:
+        "தினசரி வழிபாடு மற்றும் இறை ஆசீர்வாதத்திற்கான பாரம்பரிய திருநீறு.",
+    },
+  },
+
+  {
+    number: "04",
+    tamil: "மஞ்சள்",
+    image: "/p6.jpeg",
+
+    en: {
+      name: "Turmeric Powder",
+      description:
+        "Natural turmeric representing purity, protection and prosperity.",
+    },
+
+    ta: {
+      name: "தூய மஞ்சள்",
+      description:
+        "தூய்மை, பாதுகாப்பு மற்றும் செழிப்பைக் குறிக்கும் இயற்கை மஞ்சள்.",
+    },
+  },
+
+  {
+    number: "05",
+    tamil: "கற்பூரம்",
+    image: "/p3.jpeg",
+
+    en: {
+      name: "Pooja Camphor",
+      description:
+        "Clean-burning camphor for traditional deeparadhana.",
+    },
+
+    ta: {
+      name: "பூஜை கற்பூரம்",
+      description:
+        "தீபாராதனை மற்றும் தினசரி வழிபாட்டிற்கான தரமான கற்பூரம்.",
+    },
+  },
+
+  {
+    number: "06",
+    tamil: "ஊதுபத்தி",
+    image: "/p2.jpeg",
+
+    en: {
+      name: "Incense Sticks",
+      description:
+        "Long-lasting devotional fragrance for your prayer space.",
+    },
+
+    ta: {
+      name: "நறுமண ஊதுபத்தி",
+      description:
+        "பூஜை அறைக்கு இனிய ஆன்மீக நறுமணம் தரும் ஊதுபத்திகள்.",
+    },
+  },
+
+  {
+    number: "07",
+    tamil: "சாம்பிராணி",
+    image: "/p1.jpeg",
+
+    en: {
+      name: "Traditional Sambrani",
+      description:
+        "Sacred sambrani with a calming traditional fragrance.",
+    },
+
+    ta: {
+      name: "பாரம்பரிய சாம்பிராணி",
+      description:
+        "அமைதியான சூழலை உருவாக்கும் பாரம்பரிய நறுமண சாம்பிராணி.",
+    },
+  },
+
+  {
+    number: "08",
+    tamil: "தீப எண்ணெய்",
+    image: "/p14.png",
+
+    en: {
+      name: "Pooja Lamp Oil",
+      description:
+        "Special oil prepared for lighting traditional pooja lamps.",
+    },
+
+    ta: {
+      name: "பூஜை தீப எண்ணெய்",
+      description:
+        "பாரம்பரிய விளக்குகள் ஏற்றுவதற்காக தயாரிக்கப்பட்ட பூஜை எண்ணெய்.",
+    },
+  },
+
+  {
+    number: "09",
+    tamil: "பஞ்சுத் திரி",
+    image: "/p15.jpg",
+
+    en: {
+      name: "Cotton Wicks",
+      description:
+        "Pure cotton wicks made for lamps and traditional diyas.",
+    },
+
+    ta: {
+      name: "தூய பஞ்சுத் திரி",
+      description:
+        "விளக்கு மற்றும் தீபம் ஏற்றுவதற்கான தரமான பஞ்சுத் திரிகள்.",
+    },
+  },
+
+  {
+  number: "10",
+  tamil: "கட்டி சாம்பிராணி",
+  image: "/p16.jpeg",
+
+  en: {
+    name: "Katti Sambrani",
+    description:
+      "Traditional Katti Sambrani with a rich natural fragrance for pooja and home worship.",
+  },
+
+  ta: {
+    name: "கட்டி சாம்பிராணி",
+    description:
+      "பூஜை மற்றும் இல்ல வழிபாட்டிற்கு இயற்கையான நறுமணம் தரும் பாரம்பரிய கட்டி சாம்பிராணி.",
+  },
+},
+
+  {
+    number: "11",
+    tamil: "தேன்",
+    image: "/p8.jpeg",
+
+    en: {
+      name: "Pure Honey",
+      description:
+        "Pure and natural honey for pooja, traditional ceremonies and everyday use.",
+    },
+
+    ta: {
+      name: "தூய தேன்",
+      description:
+        "பூஜை, பாரம்பரிய சடங்குகள் மற்றும் தினசரி பயன்பாட்டிற்கான தூய இயற்கை தேன்.",
+    },
+  },
+
+  {
+    number: "12",
+    tamil: "பன்னீர்",
+    image: "/p7.jpeg",
+
+    en: {
+      name: "Rose Water",
+      description:
+        "Pure fragrant rose water for pooja, temple rituals and traditional ceremonies.",
+    },
+
+    ta: {
+      name: "ரோஜா பன்னீர்",
+      description:
+        "பூஜை, கோவில் வழிபாடு மற்றும் பாரம்பரிய சடங்குகளுக்கான நறுமணம் நிறைந்த தூய ரோஜா பன்னீர்.",
+    },
+  },
+
+  {
+    number: "13",
+    tamil: "தைலம்",
+    image: "/p9.jpeg",
+
+    en: {
+      name: "Herbal Thailam",
+      description:
+        "Traditional aromatic herbal thailam prepared with care for everyday use.",
+    },
+
+    ta: {
+      name: "மூலிகை தைலம்",
+      description:
+        "பாரம்பரிய முறையில் தயாரிக்கப்பட்ட நறுமணம் நிறைந்த தரமான மூலிகை தைலம்.",
+    },
+  },
+  {
+  number: "14",
+  tamil: "ஒயிட் ஸ்டிக்",
+  image: "/p11.jpeg",
+
+  en: {
+    name: "Liberty White Stick",
+    description:
+      "Aromatic incense sticks with a pleasant fragrance for pooja, prayer and everyday use.",
+  },
+
+  ta: {
+    name: "லிபர்ட்டி ஒயிட் ஸ்டிக்",
+    description:
+      "பூஜை, வழிபாடு மற்றும் தினசரி பயன்பாட்டிற்கு இனிய நறுமணம் தரும் தரமான ஊதுபத்தி.",
+  },
+},
+
+{
+  number: "15",
+  tamil: "6 இன் 1 ஊதுபத்தி",
+  image: "/p10.jpeg",
+
+  en: {
+    name: "Alaukik 6 in 1 Incense Sticks",
+    description:
+      "Premium incense sticks with multiple fragrances in one pack for a refreshing devotional atmosphere.",
+  },
+
+  ta: {
+    name: "அலௌகிக் 6 இன் 1 ஊதுபத்தி",
+    description:
+      "பல நறுமணங்கள் ஒரே தொகுப்பில் கிடைக்கும், பூஜை மற்றும் ஆன்மீக சூழலுக்கான பிரீமியம் ஊதுபத்தி.",
+  },
+},
+
+{
+  number: "16",
+  tamil: "மஸ்க்மெலன் ஊதுபத்தி",
+  image: "/p12.jpeg",
+
+  en: {
+    name: "Alaukik Muskmelon Incense Sticks",
+    description:
+      "Premium muskmelon fragrance incense sticks for a fresh and pleasant prayer space.",
+  },
+
+  ta: {
+    name: "அலௌகிக் மஸ்க்மெலன் ஊதுபத்தி",
+    description:
+      "இனிய மஸ்க்மெலன் நறுமணம் தரும் பூஜை மற்றும் இல்ல பயன்பாட்டிற்கான பிரீமியம் ஊதுபத்தி.",
+  },
+},
+
+{
+  number: "17",
+  tamil: "பிளாக் ஃபாரஸ்ட் ஊதுபத்தி",
+  image: "/p13.jpeg",
+
+  en: {
+    name: "Black Forest Incense Sticks",
+    description:
+      "Rich Black Forest fragrance incense sticks designed for a calm and aromatic devotional atmosphere.",
+  },
+
+  ta: {
+    name: "பிளாக் ஃபாரஸ்ட் ஊதுபத்தி",
+    description:
+      "அமைதியான மற்றும் இனிய ஆன்மீக சூழலை உருவாக்கும் பிளாக் ஃபாரஸ்ட் நறுமண ஊதுபத்தி.",
+  },
+},
+{
+  number: "18",
+  tamil: "சந்தனக் கட்டை",
+  image: "/p17.jpeg",
+
+  en: {
+    name: "Pure Sandalwood",
+    description:
+      "Premium natural sandalwood for pooja, traditional rituals and devotional use.",
+  },
+
+  ta: {
+    name: "தூய சந்தனக் கட்டை",
+    description:
+      "பூஜை, பாரம்பரிய சடங்குகள் மற்றும் ஆன்மீக பயன்பாட்டிற்கான தரமான இயற்கை சந்தனக் கட்டை.",
+  },
+},
+
+{
+  number: "19",
+  tamil: "புனுகு எண்ணெய்",
+  image: "/p18.jpeg",
+
+  en: {
+    name: "Punugu Oil",
+    description:
+      "Traditional aromatic Punugu Oil for temple pooja, spiritual rituals and devotional use.",
+  },
+
+  ta: {
+    name: "புனுகு எண்ணெய்",
+    description:
+      "கோவில் பூஜை, ஆன்மீக வழிபாடு மற்றும் பாரம்பரிய சடங்குகளுக்கான நறுமணம் நிறைந்த புனுகு எண்ணெய்.",
+  },
+},
+{
+  number: "20",
+  tamil: "கப் சாம்பிராணி",
+  image: "/p20.jpeg",
+
+  en: {
+    name: "Cup Sambrani",
+    description:
+      "Easy-to-use traditional cup sambrani with a rich devotional fragrance for pooja and home use.",
+  },
+
+  ta: {
+    name: "கப் சாம்பிராணி",
+    description:
+      "பூஜை மற்றும் இல்ல பயன்பாட்டிற்கு இனிய பாரம்பரிய நறுமணம் தரும் எளிதில் பயன்படுத்தக்கூடிய கப் சாம்பிராணி.",
+  },
+},
+];
   return (
     <main>
 <section className="products-slider-hero">
@@ -383,81 +594,59 @@ const heroContent = currentHero[language];
 
     <div className="pooja-grid">
 
-      {poojaProducts[language].map((product) => (
+    {poojaProducts.map((product) => {
+  const content = product[language];
 
-        <article
-          className="pooja-card"
-          key={product.number}
+  return (
+    <article
+      className="pooja-card"
+      key={product.number}
+    >
+      <div className="pooja-card-image">
+        <img
+          src={product.image}
+          alt={`${content.name} - ${product.tamil}`}
+          loading="lazy"
+        />
+
+        <span className="pooja-number">
+          {product.number}
+        </span>
+      </div>
+
+      <div className="pooja-card-content">
+
+       
+        <h3>{content.name}</h3>
+
+        <p>{content.description}</p>
+
+        <button
+          type="button"
+          className="pooja-select-product-btn"
+          onClick={() =>
+            addToCart({
+              ...product,
+              name: content.name,
+              description: content.description,
+            })
+          }
         >
+          {cartItems.some(
+            (item) => item.number === product.number
+          )
+            ? language === "ta"
+              ? "சேர்க்கப்பட்டது ✓"
+              : "Added ✓"
+            : language === "ta"
+              ? "கார்டில் சேர்க்க"
+              : "Add to Cart"}
+        </button>
 
-          <div className="pooja-card-image">
-
-            <img
-              src={product.image}
-              alt={`${product.name} - ${product.tamil}`}
-              loading="lazy"
-              onError={(event) => {
-                event.currentTarget.style.display = "none";
-              }}
-            />
-
-            <span className="pooja-number">
-              {product.number}
-            </span>
-
-            <div className="pooja-image-overlay">
-              <span>
-                {language === "ta"
-                  ? "தொகுப்பைப் பார்க்க"
-                  : "View Collection"}
-              </span>
-
-              <b>↗</b>
-            </div>
-
-          </div>
-
-          <div className="pooja-card-content">
-
-            <span className="pooja-tamil">
-              {product.tamil}
-            </span>
-
-            <h3>{product.name}</h3>
-
-            <p>{product.description}</p>
-<button
-  type="button"
-  className="pooja-select-product-btn"
-  onClick={() => addToCart(product)}
->
-  {cartItems.some(
-    (item) => item.number === product.number
-  )
-    ? language === "ta"
-      ? "சேர்க்கப்பட்டது ✓"
-      : "Added ✓"
-    : language === "ta"
-      ? "கார்டில் சேர்க்க"
-      : "Add to Cart"}
-</button>
-
-
-            <div className="pooja-card-footer">
-              <span>
-                {language === "ta"
-                  ? "சந்தனம் கடை"
-                  : "Santhanam Store"}
-              </span>
-
-              <i>✦</i>
-              
-            </div>
-
-          </div>
-        </article>
-
-      ))}
+      </div>
+    </article>
+  );
+})}
 
     </div>
   </div>

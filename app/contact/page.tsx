@@ -187,7 +187,7 @@ export default function ContactPage() {
     <div className="contact-visual">
       <div className="contact-image">
         <img
-          src="/santhanal-store-contact.png"
+          src="/contact.jpeg"
           alt="Santhanam traditional pooja products store in Madurai"
         />
 
