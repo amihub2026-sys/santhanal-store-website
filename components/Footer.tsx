@@ -17,72 +17,90 @@ export default function Footer() {
       <div className="footer-glow footer-glow-right" />
 
       <div className="footer-main">
-        <div className="footer-brand-column">
-          <a href="/" className="footer-brand">
-            <span className="footer-brand-mark"></span>
+      <div className="footer-brand-column">
+  <a href="/" className="footer-brand">
+    <span className="footer-brand-mark">
+      <img
+        src="moon.png"
+        alt="Asal Sichabai logo"
+      />
+    </span>
 
-            <div>
-            <strong>
+    <div>
+      <strong>
+        {language === "ta"
+          ? "அசல் சிச்சாபாய்"
+          : "Asal Sichabai"}
+      </strong>
+
+      <small>
+        {language === "ta"
+          ? "சந்தனக் கடை"
+          : "SANDALWOOD STORE"}
+      </small>
+    </div>
+  </a>
+
+  <p>
     {language === "ta"
-      ? "அசல் சிச்சாபாய்"
-      : "Asal Sichabai"}
-  </strong>
-              <small>
-                {language === "ta"
-                  ? "சந்தனக் கடை"
-                  : "SANDALWOOD STORE"}
-              </small>
-            </div>
-          </a>
+      ? "தூய நறுமணம், பாரம்பரியம் மற்றும் இறை அருள். மதுரையின் இதயத்திலிருந்து பாரம்பரிய பூஜைப் பொருட்கள்."
+      : "Pure fragrance, living tradition and divine blessings. Authentic pooja essentials from the heart of Madurai."}
+  </p>
 
-          <p>
-            {language === "ta"
-              ? "தூய நறுமணம், பாரம்பரியம் மற்றும் இறை அருள். மதுரையின் இதயத்திலிருந்து பாரம்பரிய பூஜைப் பொருட்கள்."
-              : "Pure fragrance, living tradition and divine blessings. Authentic pooja essentials from the heart of Madurai."}
-          </p>
+  <span className="footer-tamil">
+    தூய்மை • பக்தி • பாரம்பரியம்
+  </span>
 
-          <span className="footer-tamil">
-            தூய்மை • பக்தி • பாரம்பரியம்
-          </span>
+  <div className="footer-socials">
+    <a
+      href="https://www.instagram.com/asal_sichabaisandanakadai/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Instagram"
+    >
+      <img
+        src="https://cdn.simpleicons.org/instagram/ffffff"
+        alt="Instagram"
+      />
+    </a>
 
-          <div className="footer-socials">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
-              <span>Instagram</span>
-            </a>
+    <a
+      href="https://www.facebook.com/Sicha001/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Facebook"
+    >
+      <img
+        src="https://cdn.simpleicons.org/facebook/ffffff"
+        alt="Facebook"
+      />
+    </a>
 
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-            >
-              <span>Facebook</span>
-            </a>
+    <a
+      href="https://www.youtube.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="YouTube"
+    >
+      <img
+        src="https://cdn.simpleicons.org/youtube/ffffff"
+        alt="YouTube"
+      />
+    </a>
 
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-            >
-              <span>YouTube</span>
-            </a>
-
-            <a
-             href="https://wa.me/919789815039"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="WhatsApp"
-            >
-              <span>WhatsApp</span>
-            </a>
-          </div>
-        </div>
+    <a
+      href="https://wa.me/919789815039"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="WhatsApp"
+    >
+      <img
+        src="https://cdn.simpleicons.org/whatsapp/ffffff"
+        alt="WhatsApp"
+      />
+    </a>
+  </div>
+</div>
 
         <div className="footer-links-column">
           <p className="footer-heading">
@@ -124,26 +142,26 @@ export default function Footer() {
               : "VISIT OUR STORE"}
           </p>
 
-          <div className="footer-contact-item">
-            <span>⌖</span>
+         <div className="footer-contact-item">
+  <span>⌖</span>
 
-            <div>
-              <small>
-                {language === "ta" ? "முகவரி" : "LOCATION"}
-              </small>
+  <div>
+    <small>
+      {language === "ta" ? "முகவரி" : "LOCATION"}
+    </small>
 
-              <p>
-                {language === "ta"
-                  ? "சந்தனம் கடை"
-                  : "Santhanam Store"}
-                <br />
-                {language === "ta"
-                  ? "மதுரை, தமிழ்நாடு"
-                  : "Madurai, Tamil Nadu"}
-              </p>
-            </div>
-          </div>
+    <p>
+      {language === "ta"
+        ? "74, கிழக்கு மாசி வீதி, காமராஜர் சாலை,"
+        : "74, E Masi Street, Kamarajar Salai,"}
+      <br />
 
+      {language === "ta"
+        ? "மதுரை மெயின், மதுரை, தமிழ்நாடு – 625001"
+        : "Madurai Main, Madurai, Tamil Nadu – 625001"}
+    </p>
+  </div>
+</div>
           <div className="footer-contact-item">
             <span>☎</span>
 
@@ -183,50 +201,21 @@ export default function Footer() {
               ? "திறந்திருக்கும் நேரம்"
               : "OPENING HOURS"}
           </p>
+<div className="footer-hours">
+  <div>
+    <span>
+      {language === "ta"
+        ? "திங்கள் – ஞாயிறு"
+        : "Monday – Sunday"}
+    </span>
 
-          <div className="footer-hours">
-            <div>
-              <span>
-                {language === "ta"
-                  ? "திங்கள் – சனி"
-                  : "Monday – Saturday"}
-              </span>
-
-              <strong>
-                {language === "ta"
-                  ? "காலை 8:00 – இரவு 9:00"
-                  : "8:00 AM – 9:00 PM"}
-              </strong>
-            </div>
-
-            <div>
-              <span>
-                {language === "ta"
-                  ? "ஞாயிறு"
-                  : "Sunday"}
-              </span>
-
-              <strong>
-                {language === "ta"
-                  ? "காலை 8:00 – இரவு 9:00"
-                  : "8:00 AM – 9:00 PM"}
-              </strong>
-            </div>
-
-            <div>
-              <span>
-                {language === "ta"
-                  ? "திருவிழா நாட்கள்"
-                  : "Festival Days"}
-              </span>
-
-              <strong>
-                {language === "ta"
-                  ? "நாள் முழுவதும் திறந்திருக்கும்"
-                  : "Open All Day"}
-              </strong>
-            </div>
-          </div>
+    <strong>
+      {language === "ta"
+        ? "காலை 9:00 – இரவு 11:00"
+        : "9:00 AM – 11:00 PM"}
+    </strong>
+  </div>
+</div>
 
           <div className="footer-open-status">
             <i />
