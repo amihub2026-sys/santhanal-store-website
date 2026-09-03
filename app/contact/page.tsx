@@ -216,18 +216,18 @@ export default function ContactPage() {
         <article className="contact-detail">
           <span className="contact-detail-number">01</span>
 
-          <div>
-            <small>
-              {language === "ta"
-                ? "கடை முகவரி"
-                : "STORE LOCATION"}
-            </small>
+         <div>
+  <small>
+    {language === "ta"
+      ? "கடை முகவரி"
+      : "STORE LOCATION"}
+  </small>
 
-            <h3>
-              {language === "ta"
-                ? "மதுரை, தமிழ்நாடு"
-                : "Madurai, Tamil Nadu"}
-            </h3>
+  <h3>
+    {language === "ta"
+      ? "74, கிழக்கு மாசி வீதி, காமராஜர் சாலை, மதுரை மெயின், மதுரை, தமிழ்நாடு – 625001"
+      : "74, East Masi Street, Kamarajar Salai, Madurai Main, Madurai, Tamil Nadu – 625001"}
+  </h3>
 
             <p>
               {language === "ta"
@@ -264,8 +264,8 @@ export default function ContactPage() {
 
             <p>
               {language === "ta"
-                ? "திங்கள் – ஞாயிறு · காலை 8:00 – இரவு 9:00"
-                : "Monday – Sunday · 8:00 AM – 9:00 PM"}
+                ? "திங்கள் – ஞாயிறு · காலை 9:00 – இரவு 11:00"
+                : "Monday – Sunday · 9:00 AM – 11:00 PM"}
             </p>
           </div>
 
@@ -311,9 +311,13 @@ export default function ContactPage() {
   <div className="contact-map">
     <iframe
       title="Santhanam Store location in Madurai"
-      src="https://www.google.com/maps?q=Madurai,Tamil%20Nadu&output=embed"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.808838628677!2d78.12321949999999!3d9.920543499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c59b3b6cfa49%3A0x977d829df5b75644!2sAsal%20Sichabai%20Sandhana%20Kadai!5e1!3m2!1sen!2sin!4v1788243098001!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen
       loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
+      referrerPolicy="strict-origin-when-cross-origin"
     />
 
     <div className="contact-map-overlay">
