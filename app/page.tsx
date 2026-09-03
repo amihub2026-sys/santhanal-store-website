@@ -111,7 +111,7 @@ const aboutTopics = {
 const shopCards = {
   en: [
     {
-      image: "/shop-reference.png",
+      image: "/store.jpeg",
       kicker: "THE STORE",
       title: "A Traditional Santhanam Kadai",
       text: "A welcoming place for pure sandalwood, pooja essentials and traditional worship needs.",
