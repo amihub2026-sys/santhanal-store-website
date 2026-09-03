@@ -615,7 +615,6 @@
   color: #9e4b13;
   border-top: 1px solid rgba(127, 57, 11, 0.13);
 }
-
 .pooja-card-footer span {
   font-size: 9px;
   font-weight: 800;
@@ -7404,6 +7403,7 @@
     margin-top: 7px;
     padding-top: 6px;
   }
+
 
   .pooja-card-footer span {
     font-size: 5.5px !important;
