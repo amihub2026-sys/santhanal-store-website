@@ -261,7 +261,7 @@ const heroContent = currentHero[language];
   {
     number: "09",
     tamil: "பஞ்சுத் திரி",
-    image: "/p15.jpg",
+    image: "/p33.JPG",
 
     en: {
       name: "Cotton Wicks",
@@ -468,6 +468,315 @@ const heroContent = currentHero[language];
     name: "கப் சாம்பிராணி",
     description:
       "பூஜை மற்றும் இல்ல பயன்பாட்டிற்கு இனிய பாரம்பரிய நறுமணம் தரும் எளிதில் பயன்படுத்தக்கூடிய கப் சாம்பிராணி.",
+  },
+},
+{
+  number: "21",
+  tamil: "யானை சாணம் விளக்கு",
+  image: "/p21.jpeg",
+  en: {
+    name: "Yaanai Saanam Vilakku",
+    description:
+      "Traditional eco-friendly lamp made from elephant dung, used for pooja and spiritual rituals.",
+  },
+  ta: {
+    name: "யானை சாணம் விளக்கு",
+    description:
+      "யானை சாணத்தால் தயாரிக்கப்படும் பாரம்பரிய இயற்கை விளக்கு. பூஜை மற்றும் ஆன்மீக வழிபாடுகளில் பயன்படுத்தப்படுகிறது.",
+  },
+},
+{
+  number: "22",
+  tamil: "கோன் சாம்பிராணி",
+  image: "/p22.jpeg",
+  en: {
+    name: "Cone Sambrani",
+    description:
+      "Traditional cone-shaped sambrani with a pleasant fragrance, ideal for pooja, prayer rooms and everyday home use.",
+  },
+  ta: {
+    name: "கோன் சாம்பிராணி",
+    description:
+      "பூஜை, பூஜை அறை மற்றும் தினசரி இல்ல பயன்பாட்டிற்கு இனிய நறுமணம் தரும் பாரம்பரிய கோன் வடிவ சாம்பிராணி.",
+  },
+},
+ {
+  number: "23",
+  tamil: "காதோட்டு கருமணி",
+  image: "/p23.JPG",
+  en: {
+    name: "Kathottu Karumani",
+    description:
+      "Traditional ear ornament with black beads, commonly used for children as part of Tamil cultural customs.",
+  },
+  ta: {
+    name: "காதோட்டு கருமணி",
+    description:
+      "தமிழர் பாரம்பரியத்தில் குழந்தைகளுக்கு அணிவிக்கப்படும் கருமணியுடன் கூடிய பாரம்பரிய காதணி.",
+  },
+},
+{
+  number: "24",
+  tamil: "பச்சை கற்பூரம்",
+  image: "/p24.JPG",
+  en: {
+    name: "Edible Camphor",
+    description:
+      "Traditional crystalline camphor commonly used for devotional purposes and selected traditional preparations.",
+  },
+  ta: {
+    name: "பச்சை கற்பூரம்",
+    description:
+      "பூஜை மற்றும் பாரம்பரிய பயன்பாடுகளுக்காக பயன்படுத்தப்படும் தூய படிக வடிவ பச்சை கற்பூரம்.",
+  },
+},
+{
+  number: "25",
+  tamil: "ஜவ்வாது",
+  image: "/p29.JPG",
+  en: {
+    name: "Javadhu",
+    description:
+      "Traditional aromatic Javadhu fragrance with a rich and pleasant scent, commonly used for pooja and devotional purposes.",
+  },
+  ta: {
+    name: "ஜவ்வாது",
+    description:
+      "பூஜை மற்றும் ஆன்மீக பயன்பாட்டிற்கு இனிய நறுமணம் தரும் பாரம்பரிய ஜவ்வாது வாசனை திரவியம்.",
+  },
+},
+
+{
+  number: "26",
+  tamil: "அரகஜா அத்தர்",
+  image: "/p26.JPG",
+  en: {
+    name: "Aragaja Attar",
+    description:
+      "Traditional alcohol-free Aragaja Attar with a rich and long-lasting fragrance for devotional and personal use.",
+  },
+  ta: {
+    name: "அரகஜா அத்தர்",
+    description:
+      "பூஜை மற்றும் தனிப்பட்ட பயன்பாட்டிற்கு நீண்ட நேரம் இனிய நறுமணம் தரும் பாரம்பரிய ஆல்கஹால் இல்லாத அரகஜா அத்தர்.",
+  },
+},
+
+{
+  number: "27",
+  tamil: "சந்தனப் பொடி",
+  image: "/p25.JPG",
+  en: {
+    name: "Sandalwood Powder",
+    description:
+      "Traditional sandalwood powder with a natural soothing fragrance, suitable for pooja and devotional rituals.",
+  },
+  ta: {
+    name: "சந்தனப் பொடி",
+    description:
+      "பூஜை மற்றும் ஆன்மீக வழிபாடுகளில் பயன்படுத்தப்படும் இயற்கையான நறுமணம் கொண்ட பாரம்பரிய சந்தனப் பொடி.",
+  },
+},
+
+{
+  number: "28",
+  tamil: "அரகஜா தைலம்",
+  image: "/p28.JPG",
+  en: {
+    name: "Aragaja Oil",
+    description:
+      "Traditional aromatic Aragaja oil with a rich fragrance, suitable for pooja, devotional and spiritual use.",
+  },
+  ta: {
+    name: "அரகஜா தைலம்",
+    description:
+      "பூஜை மற்றும் ஆன்மீக பயன்பாட்டிற்கு இனிய நறுமணம் தரும் பாரம்பரிய அரகஜா தைலம்.",
+  },
+},
+{
+  number: "29",
+  tamil: "அத்தர்",
+  image: "/p27.JPG",
+  en: {
+    name: "Attar",
+    description:
+      "Traditional concentrated fragrance with a rich and long-lasting aroma, suitable for personal and devotional use.",
+  },
+  ta: {
+    name: "அத்தர்",
+    description:
+      "தனிப்பட்ட மற்றும் ஆன்மீக பயன்பாட்டிற்கு நீண்ட நேரம் இனிய நறுமணம் தரும் பாரம்பரிய அத்தர்.",
+  },
+},
+{
+  number: "30",
+  tamil: "பஞ்சகவ்யம்",
+  image: "/p30.JPG",
+  en: {
+    name: "Panchagavya",
+    description:
+      "Traditional Panchagavya preparation used for pooja, temple rituals and other devotional purposes.",
+  },
+  ta: {
+    name: "பஞ்சகவ்யம்",
+    description:
+      "பூஜை, கோவில் வழிபாடு மற்றும் பாரம்பரிய ஆன்மீக சடங்குகளில் பயன்படுத்தப்படும் பஞ்சகவ்யம்.",
+  },
+},
+{
+  number: "31",
+  tamil: "சந்தன பேஸ்ட்",
+  image: "/p31.JPG",
+  en: {
+    name: "Sandalwood Paste",
+    description:
+      "Traditional sandalwood paste with a soothing fragrance, commonly used for pooja, temple rituals and devotional purposes.",
+  },
+  ta: {
+    name: "சந்தன பேஸ்ட்",
+    description:
+      "பூஜை, கோவில் வழிபாடு மற்றும் ஆன்மீக பயன்பாடுகளுக்குப் பயன்படுத்தப்படும் இனிய நறுமணம் கொண்ட பாரம்பரிய சந்தன பேஸ்ட்.",
+  },
+},
+{
+  number: "32",
+  tamil: "மை",
+  image: "/p32.JPG",
+  en: {
+    name: "Mai",
+    description:
+      "Traditional black Mai preparation used for customary and devotional purposes.",
+  },
+  ta: {
+    name: "மை",
+    description:
+      "பாரம்பரிய மற்றும் வழிபாட்டு பயன்பாடுகளுக்காக பயன்படுத்தப்படும் கருப்பு மை.",
+  },
+},
+{
+  number: "33",
+  tamil: "திருமஞ்சனப் பொடி",
+  image: "/p34.JPG",
+  en: {
+    name: "Thirumanjana Powder",
+    description:
+      "Traditional herbal Thirumanjana powder used for abhishekam, pooja and other devotional rituals.",
+  },
+  ta: {
+    name: "திருமஞ்சனப் பொடி",
+    description:
+      "அபிஷேகம், பூஜை மற்றும் பாரம்பரிய ஆன்மீக சடங்குகளில் பயன்படுத்தப்படும் திருமஞ்சனப் பொடி.",
+  },
+},
+
+{
+  number: "34",
+  tamil: "நூல் திரி",
+  image: "/p15.jpg",
+  en: {
+    name: "Nool Thiri",
+    description:
+      "Traditional cotton thread wick used for lighting oil lamps during pooja, prayers and auspicious occasions.",
+  },
+  ta: {
+    name: "நூல் திரி",
+    description:
+      "பூஜை, வழிபாடு மற்றும் சுப நிகழ்ச்சிகளில் எண்ணெய் விளக்கு ஏற்றுவதற்குப் பயன்படுத்தப்படும் பாரம்பரிய பருத்தி நூல் திரி.",
+  },
+},
+
+{
+  number: "35",
+  tamil: "நவமணி",
+  image: "/p35.JPG",
+  en: {
+    name: "Navamani",
+    description:
+      "Traditional set of nine coloured stones used for pooja, spiritual rituals and other auspicious purposes.",
+  },
+  ta: {
+    name: "நவமணி",
+    description:
+      "பூஜை, ஆன்மீக சடங்குகள் மற்றும் சுப காரியங்களில் பயன்படுத்தப்படும் ஒன்பது வண்ண மணிகளின் பாரம்பரிய தொகுப்பு.",
+  },
+},
+
+{
+  number: "36",
+  tamil: "லட்சுமி பஞ்சலோக நாணயம்",
+  image: "/p.36.JPG",
+  en: {
+    name: "Lakshmi Panchalogam Coin",
+    description:
+      "Traditional Lakshmi Panchalogam coins used for pooja, auspicious ceremonies and devotional purposes.",
+  },
+  ta: {
+    name: "லட்சுமி பஞ்சலோக நாணயம்",
+    description:
+      "பூஜை, சுப நிகழ்ச்சிகள் மற்றும் ஆன்மீக வழிபாடுகளில் பயன்படுத்தப்படும் பாரம்பரிய லட்சுமி பஞ்சலோக நாணயங்கள்.",
+  },
+},
+{
+  number: "37",
+  tamil: "புனுகு பேஸ்ட்",
+  image: "/p37.JPG",
+  en: {
+    name: "Punugu Paste",
+    description:
+      "Traditional aromatic paste used for pooja, temple rituals and other devotional purposes.",
+  },
+  ta: {
+    name: "புனுகு பேஸ்ட்",
+    description:
+      "பூஜை, கோவில் வழிபாடு மற்றும் பாரம்பரிய ஆன்மீக பயன்பாடுகளுக்குப் பயன்படுத்தப்படும் நறுமண பேஸ்ட்.",
+  },
+},
+
+{
+  number: "38",
+  tamil: "எருக்கன் திரி",
+  image: "/p38.JPG",
+  en: {
+    name: "Erukkan Thiri",
+    description:
+      "Traditional Erukkan wick used for lighting lamps during pooja, prayers and spiritual rituals.",
+  },
+  ta: {
+    name: "எருக்கன் திரி",
+    description:
+      "பூஜை, வழிபாடு மற்றும் ஆன்மீக சடங்குகளில் விளக்கு ஏற்றுவதற்குப் பயன்படுத்தப்படும் பாரம்பரிய எருக்கன் திரி.",
+  },
+},
+
+{
+  number: "39",
+  tamil: "அனுமன் சிந்தூரம்",
+  image: "/p39.JPG",
+  en: {
+    name: "Hanuman Sindoor",
+    description:
+      "Traditional sindoor used for Hanuman pooja, temple worship and other devotional rituals.",
+  },
+  ta: {
+    name: "அனுமன் சிந்தூரம்",
+    description:
+      "அனுமன் பூஜை, கோவில் வழிபாடு மற்றும் ஆன்மீக சடங்குகளில் பயன்படுத்தப்படும் பாரம்பரிய சிந்தூரம்.",
+  },
+},
+
+{
+  number: "40",
+  tamil: "புனுகு",
+  image: "/p40.JPG",
+  en: {
+    name: "Punugu",
+    description:
+      "Traditional aromatic fragrance used for pooja, temple worship and devotional purposes.",
+  },
+  ta: {
+    name: "புனுகு",
+    description:
+      "பூஜை, கோவில் வழிபாடு மற்றும் ஆன்மீக பயன்பாடுகளுக்குப் பயன்படுத்தப்படும் பாரம்பரிய நறுமணப் பொருள்.",
   },
 },
 ];
