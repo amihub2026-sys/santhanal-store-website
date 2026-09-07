@@ -118,7 +118,7 @@ const shopCards = {
       note: "Our Store",
     },
     {
-      image: "/sandal-abhishekam.png",
+      image: "/home.JPG",
       kicker: "THE TRADITION",
       title: "Prepared with Devotion",
       text: "Traditional preparation with special attention to purity, fragrance and devotion.",
@@ -135,14 +135,14 @@ const shopCards = {
 
   ta: [
     {
-      image: "/shop-reference.png",
+      image: "/store.jpeg",
       kicker: "எங்கள் கடை",
       title: "பாரம்பரிய சந்தனக் கடை",
       text: "தூய சந்தனம், பூஜைப் பொருட்கள் மற்றும் வழிபாட்டிற்குத் தேவையான பாரம்பரிய பொருட்கள் கிடைக்கும் நம்பிக்கையான இடம்.",
       note: "எங்கள் கடை",
     },
     {
-      image: "/sandal-abhishekam.png",
+      image: "/home.JPG",
       kicker: "எங்கள் பாரம்பரியம்",
       title: "பக்தியுடன் தயாரிக்கப்படும் சந்தனம்",
       text: "தூய்மை, இயற்கை நறுமணம் மற்றும் பாரம்பரிய முறைகளுக்கு முக்கியத்துவம் அளித்து தயாரிக்கப்படுகிறது.",
